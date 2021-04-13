@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intelligence.IntelligenceController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="250.0" prefWidth="250.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#closeCurrentWindow" text="OK"/>
+            <TextArea prefHeight="209.0" prefWidth="250.0" text="How To Play Coin Collection: &#10;Click the highest number to collect as many coins as possible! &#10; You get 1 coin for every round you complete.&#10; Try to get as many coins as possible without hitting any fake Boxes! &#10; Hint: If the button isn't blue, Try not to click the same button! &#10; How To Play Chest Search: &#10; Read the statement given and click the chest which you think fits the description &#10; How To Play Coin Distribution:&#10; Read the statement given,&#10; click the box which you think fits the description, &#10; then click submit when you are ready!" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

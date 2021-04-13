@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intelligence.StartController">
+   <center>
+      <Canvas fx:id="gameCanvas" height="200.0" width="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Label text="Intelligence" BorderPane.alignment="CENTER">
+         <graphic>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuClickHandler" text="Quit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuClickHandler" text="How To Play" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </graphic></Label>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="Coin Collection" />
+            <Button mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="Chest Search" />
+            <Button mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="Coin Distribution" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

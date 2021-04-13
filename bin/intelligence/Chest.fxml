@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intelligence.ChestController">
+   <top>
+      <HBox prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="chestOne" mnemonicParsing="false" onAction="#buttonClickHandler" />
+            <Button fx:id="chestTwo" mnemonicParsing="false" onAction="#buttonClickHandler" />
+            <Button fx:id="chestThree" mnemonicParsing="false" onAction="#buttonClickHandler" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="statementOne" strokeType="OUTSIDE" strokeWidth="0.0" text="Chest 2 does not have the gold" />
+                  <Text fx:id="statementTwo" strokeType="OUTSIDE" strokeWidth="0.0" text="The gold is in Chest 1 or chest 3" />
+                  <Text fx:id="statementThree" strokeType="OUTSIDE" strokeWidth="0.0" text="The gold is not in here (Chest 3)" />
+                  <Text fx:id="textRule" strokeType="OUTSIDE" strokeWidth="0.0" text="If all of the statements are true, where is the gold?" wrappingWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

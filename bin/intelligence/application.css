@@ -1,0 +1,51 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*
+ * Program Name: application.css
+ * Name: Simon Orr
+ * Date: February 2nd, 2021
+ * Description: A series of Intelligence based games to hone your intelligence and problem solving skills while earning Coins!
+ */
+ 
+.button{
+	-fx-focus-color: transparent;
+	-fx-background-insets:-1, 0, 1, 1;
+	-fx-font-weight: bold;
+	-fx-font-size: 36;
+	-fx-text-fill: black;
+	-fx-background-color: yellow;
+	-fx-border-color:blue;
+}
+.canvas{
+	-fx-background-color:black;
+}
+.borderPane{
+	-fx-background-color:black;
+}
+.scene{
+	-fx-background-insets:-1, 0, 1, 1;
+	-fx-font-weight: bold;
+	-fx-font-size: 36;
+	-fx-text-fill: blue;
+	-fx-background-color: black;
+	-text-align: center;
+	-fx-focus-color: black;
+}
+.highlight-button{
+	-fx-focus-color: transparent;
+	-fx-background-insets:-1, 0, 1, 1;
+	-fx-font-weight: bold;
+	-fx-background-color: blue;
+	-fx-font-size: 36;
+	-fx-text-fill: black;
+}
+.chest-button {
+	-fx-focus-color: transparent;
+	-fx-background-insets:-1, 0, 1, 1;
+	-fx-font-weight: bold;
+	-fx-font-size: 36;
+	-fx-text-fill: black;
+}
+.selected-button{
+	-fx-background-color:blue;
+}
